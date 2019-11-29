@@ -64,7 +64,7 @@ class StringGeneratorTest extends \PHPUnit_Framework_TestCase
     private function accumulateUsedChars(array $usedChars, $value)
     {
         for ($j = 0; $j < strlen($value); $j++) {
-            $char = $value{$j};
+            $char = PHP_VERSION_ID > 70400 ? $value[$j] : $value{$j};
             if (!isset($usedChars[$char])) {
                 $usedChars[$char] = 0;
             }

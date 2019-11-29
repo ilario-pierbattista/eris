@@ -33,7 +33,7 @@ class SubsetGenerator implements Generator
         $binaryDescription = str_pad(decbin($subsetIndex), count($this->universe), "0", STR_PAD_LEFT);
         $subset = [];
         for ($i = 0; $i < strlen($binaryDescription); $i++) {
-            $elementPresent = $binaryDescription{$i};
+            $elementPresent = PHP_VERSION_ID > 70400 ? $binaryDescription[$i] : $binaryDescription{$i};
             if ($elementPresent == "1") {
                 $subset[] = $this->universe[$i];
             }
