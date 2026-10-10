@@ -6,7 +6,7 @@ The project follows [semantic versioning](http://semver.org/). `BC` stands for a
 
 ## [Unreleased]
 ### Added
-* Support for PHP 8.5 (#1).
+* Support for PHP 8.5.
 
 ## [1.2.0] - 2026-09-30
 ### Added
