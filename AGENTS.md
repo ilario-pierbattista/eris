@@ -91,6 +91,10 @@ Runs `php-cs-fixer` to fix code style issues.
 composer rector
 ```
 
+## Changelog
+
+Update `CHANGELOG.md` (under `[Unreleased]`) for every non-trivial change that could affect the library users, e.g. new features, behaviour changes, fixes, and supported PHP/PHPUnit versions. Follow the existing format and reference the PR or issue number.
+
 ## Agent Skills
 
 Skills live in `.agents/skills/`. Create each new skill as `.agents/skills/<skill-name>/SKILL.md`, with a frontmatter declaring `name` and `description`. Do not create skills directly in `.claude/skills`: it is a symlink to `.agents/skills`.
