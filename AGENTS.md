@@ -30,6 +30,7 @@ make run-php-8.1   # PHP 8.1
 make run-php-8.2   # PHP 8.2
 make run-php-8.3   # PHP 8.3
 make run-php-8.4   # PHP 8.4
+make run-php-8.5   # PHP 8.5
 ```
 
 The project root is mounted at `/usr/src/eris` inside the container. All subsequent commands should be run from that path.
